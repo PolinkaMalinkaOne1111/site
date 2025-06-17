@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.auth_form {
+  border-radius: 15px;
+  border: #d9d9d9 1px solid;
+  padding: 17px;
+  width: 838px;
+  font-weight: 700;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
+}
+
+.form-group input,
+select {
+  width: 606px;
+  height: 57px;
+  padding: 11px 20px 17px 20px;
+  border-color: transparent;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background: #ffd7f2;
+  font-size: 24px;
+}
+
+select {
+  color: #757575;
+}
+
+h1 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 70px;
+}
+.reg_info {
+  font-size: 15px;
+}

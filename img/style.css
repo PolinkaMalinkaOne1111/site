@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Alice&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+* {
+  font-family: Montserrat;
+}
+
+body {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.form-group input {
+  width: 606px;
+  font-size: 24px;
+  border-color: transparent;
+  border-radius: 30px;
+  box-sizing: border-box;
+  background: #d7e9ff;
+  padding: 21px 0px 20px 60px;
+}
+
+.form-group input:focus {
+  border-color: #5a9cff;
+  outline: none;
+}
+
+.auth_form {
+  border-radius: 30px;
+  border: #d9d9d9 1px solid;
+  padding: 66px 51px 23px 71px;
+  width: 728px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit-form_button {
+  font-size: 24px;
+  background: #539efe;
+  border-radius: 30px;
+  border-color: transparent;
+  padding: 20px 81px 20px;
+  cursor: pointer;
+  margin: 52px;
+  font-weight: bold;
+}
+
+.register {
+  font-size: 24px;
+  color: #000000;
+  text-align: center;
+}
+
+.register a {
+  color: #1269bf;
+  text-decoration: none;
+}
+
+.register a:hover {
+  text-decoration: underline;
+}
+
+#logoutModal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  background: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1128px;
+  margin: 0 auto;
+  background: #ffffff;
+  height: auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 36px 0;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-right: 9%;
+}
+
+.logout-form {
+  margin: 0;
+}
+
+.logout-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.logout-button img {
+  width: 30px;
+  height: auto;
+}
+
+/* Стили для таблицы истории заявок */
+
+.table-container {
+  width: 100%;
+  max-width: 1128px;
+  margin: 20px auto;
+
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  min-width: 800px;
+}
+
+th,
+td {
+  text-align: center;
+}
+
+th {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+td {
+  font-size: 14px;
+}
+
+.status {
+  display: inline-block;
+  padding: 5px 15px;
+  border-radius: 20px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+
+.status.completed {
+  background-color: #007bff;
+}
+
+.status.cancelled {
+  background-color: #f44336;
+}
+
+.status.pending {
+  background-color: #ffa500;
+}
+
+.create_request {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.create-request_button {
+  margin-top: 40px;
+}
+
+#checkbox {
+  height: 30px;
+  width: 30px;
+  margin-top: 10px;
+}
+.checkbox-cont {
+  display: flex;
+  align-items: baseline;
+}
+
+#checkLabel {
+  padding-top: 30px;
+}
+
+.card {
+  background-color: #6ec1f7;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  display: inline-block;
+  width: 300px;
+  color: #000;
+}
