@@ -1,20 +1,20 @@
 <?php
-// require 'db.php';
+require 'db.php';
 
-// $sql = "SELECT 
-//             r.id AS request_id,
-//             CONCAT(u.surname, ' ', u.name, ' ', u.last_name) AS full_name,
-//             u.phone,
-//             s.name AS service_name,
-//             r.address,
-//             r.status,
-//             r.cancel_reason
-//         FROM requests r
-//         JOIN users u ON r.user_id = u.id
-//         JOIN services s ON r.service_id = s.id";
+$sql = "SELECT 
+            r.id AS request_id,
+            CONCAT(u.surname, ' ', u.name, ' ', u.last_name) AS full_name,
+            u.phone,
+            s.name AS service_name,
+            r.address,
+            r.status,
+            r.cancel_reason
+        FROM requests r
+        JOIN users u ON r.user_id = u.id
+        JOIN services s ON r.service_id = s.id";
 
 // $result = $conn->query($sql);
-// $requests = $result->fetchAll(PDO::FETCH_ASSOC);
+$requests = $result->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
 <!DOCTYPE html>
